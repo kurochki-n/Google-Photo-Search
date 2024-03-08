@@ -1,7 +1,7 @@
 from aiogram import types
 
 
-def travel_guide_keyboard():
+def travel_guide_keyboard() -> types.ReplyKeyboardMarkup:
     buttons = [
         [types.KeyboardButton(text='🔎 Найти фото')]
     ]
