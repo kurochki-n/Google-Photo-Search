@@ -18,6 +18,7 @@ logging.basicConfig(
     ]
     )
 
+
 async def main() -> None:
     bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
     dp = Dispatcher(storage=MemoryStorage())

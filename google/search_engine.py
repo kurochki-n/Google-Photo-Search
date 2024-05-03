@@ -4,6 +4,7 @@ from icrawler.builtin import GoogleImageCrawler
 from aiogram.types.input_file import FSInputFile
 from aiogram.types import Message
 
+
 async def get_google_img(message: Message) -> None:
     for file in (os.listdir('google/img')):
         os.remove(f'google/img/{file}')

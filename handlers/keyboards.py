@@ -1,9 +1,9 @@
-from aiogram import types
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardMarkup
 
 
-def travel_guide_keyboard() -> types.ReplyKeyboardMarkup:
+def travel_guide_keyboard() -> ReplyKeyboardMarkup:
     buttons = [
-        [types.KeyboardButton(text='🔎 Найти фото')]
+        [KeyboardButton(text='🔎 Найти фото')]
     ]
-    keyboard = types.ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True)
+    keyboard = ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True)
     return keyboard

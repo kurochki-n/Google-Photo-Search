@@ -1,5 +1,4 @@
 
-
 def start_message(user_id: int) -> str:
     return (f'<b>Привет, {user_id}!</b>\n'
             '<b>Данный бот создан для поиска фото в Google</b>')
