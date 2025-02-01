@@ -18,6 +18,8 @@ async def get_google_img(message: Message) -> None:
     
     for photo in (os.listdir('google/img')):
         await message.answer_photo(FSInputFile(f'google/img/{photo}'))
+        os.remove(f'google/img/{photo}')
+        
         
 async def run_searching(message: Message) -> None:
     try:
